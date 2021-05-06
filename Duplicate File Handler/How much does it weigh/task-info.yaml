@@ -132,5 +132,49 @@ files:
     \    DuplicateFileHandlerCheck().run_tests()\n"
   learner_created: false
 feedback_link: https://hyperskill.org/projects/176/stages/906/implement#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: "Unexpected error in test #5\n\nWe have recorded this bug and will fix\
+    \ it soon.\n\nSubmitted via IDE\n\nOS Windows 10\nCPython 3.9.2\nTesting library\
+    \ version 4\n\nTraceback (most recent call last):\n  File \"D:\\rt\\Research Sector\\\
+    Data Analysis Division\\Python Study\\PycharmProjects\\Duplicate File Handler\\\
+    .idea\\VirtualEnvironment\\lib\\site-packages\\hstest\\stage\\stage_test.py\"\
+    , line 96, in run_tests\n    result: CheckResult = test_run.test()\n  File \"\
+    D:\\rt\\Research Sector\\Data Analysis Division\\Python Study\\PycharmProjects\\\
+    Duplicate File Handler\\.idea\\VirtualEnvironment\\lib\\site-packages\\hstest\\\
+    testing\\test_run.py\", line 92, in test\n    self._check_errors()\n  File \"\
+    D:\\rt\\Research Sector\\Data Analysis Division\\Python Study\\PycharmProjects\\\
+    Duplicate File Handler\\.idea\\VirtualEnvironment\\lib\\site-packages\\hstest\\\
+    testing\\test_run.py\", line 120, in _check_errors\n    raise error_in_test\n\
+    \  File \"D:\\rt\\Research Sector\\Data Analysis Division\\Python Study\\PycharmProjects\\\
+    Duplicate File Handler\\.idea\\VirtualEnvironment\\lib\\site-packages\\hstest\\\
+    testing\\runner\\async_main_file_runner.py\", line 41, in _run_file\n    return\
+    \ future.result(timeout=time_limit / 1000)\n  File \"D:\\Program Files\\Python\
+    \ 39\\lib\\concurrent\\futures\\_base.py\", line 440, in result\n    return self.__get_result()\n\
+    \  File \"D:\\Program Files\\Python 39\\lib\\concurrent\\futures\\_base.py\",\
+    \ line 389, in __get_result\n    raise self._exception\n  File \"D:\\Program Files\\\
+    Python 39\\lib\\concurrent\\futures\\thread.py\", line 52, in run\n    result\
+    \ = self.fn(*self.args, **self.kwargs)\n  File \"D:\\rt\\Research Sector\\Data\
+    \ Analysis Division\\Python Study\\PycharmProjects\\Duplicate File Handler\\.idea\\\
+    VirtualEnvironment\\lib\\site-packages\\hstest\\testing\\runner\\async_main_file_runner.py\"\
+    , line 37, in <lambda>\n    future: Future = executor.submit(lambda: self._run_dynamic_test(test_run))\n\
+    \  File \"D:\\rt\\Research Sector\\Data Analysis Division\\Python Study\\PycharmProjects\\\
+    Duplicate File Handler\\.idea\\VirtualEnvironment\\lib\\site-packages\\hstest\\\
+    testing\\runner\\async_main_file_runner.py\", line 18, in _run_dynamic_test\n\
+    \    result = test_case.dynamic_testing()\n  File \"D:\\rt\\Research Sector\\\
+    Data Analysis Division\\Python Study\\PycharmProjects\\Duplicate File Handler\\\
+    .idea\\VirtualEnvironment\\lib\\site-packages\\hstest\\dynamic\\input\\dynamic_testing.py\"\
+    , line 59, in <lambda>\n    tests += [lambda o=obj, a=args: self.test(o, *a)]\n\
+    \  File \"D:\\rt\\Research Sector\\Data Analysis Division\\Python Study\\PycharmProjects\\\
+    Duplicate File Handler\\.idea\\VirtualEnvironment\\lib\\site-packages\\hstest\\\
+    dynamic\\dynamic_test.py\", line 35, in <lambda>\n    DynamicTestElement(lambda\
+    \ *a, **k: self.fn(*a, **k),\n  File \"D:\\rt\\Research Sector\\Data Analysis\
+    \ Division\\Python Study\\PycharmProjects\\Duplicate File Handler\\Duplicate File\
+    \ Handler\\task\\tests.py\", line 117, in check_group_first_line\n    if 'byte'\
+    \ in output[0]:\nIndexError: list index out of range\n\nPlease find below the\
+    \ output of your program during this failed test.\nNote that the '>' character\
+    \ indicates the beginning of the input line.\n\n---\n\nArguments: module\\root_folder\n\
+    \nEnter file format:\n> \n\n        Size sorting options:\n1. Descending\n2. Ascending\n\
+    \nEnter a sorting option:\n> 2"
+  time: Thu, 06 May 2021 11:48:32 UTC
 record: -1
